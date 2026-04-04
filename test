@@ -1,0 +1,7 @@
+import sys
+
+tests = int(sys.stdin.readline().strip())
+for _ in range(tests):
+    n = int(sys.stdin.readline().strip())
+    string = sys.stdin.readline().strip()
+    print("Bob" if all(lambda x: x == string[0], string) else "Alice")
